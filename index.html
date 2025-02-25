@@ -1,5 +1,3 @@
-</body>
-</html>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -105,6 +103,7 @@
             display: none;
             animation: fadeIn 0.5s ease;
         }
+
         .event-image {
             width: 100%;
             margin: 15px 0;
@@ -187,6 +186,109 @@
                 margin-left: 0;
             }
         }
+
+        /* Estilos para la sección de eventos recientes */
+        .recent-events {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .recent-title {
+            text-align: center;
+            color: #1e3a8a;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #3b82f6;
+            font-size: 1.8em;
+        }
+
+        .recent-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .recent-event {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+            .recent-event:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            }
+
+        .recent-header {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            background-color: #eff6ff;
+            border-left: 10px solid #3b82f6;
+        }
+
+        .recent-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #3b82f6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            color: white;
+            font-size: 1.2em;
+        }
+
+        .recent-event-title {
+            font-size: 1.3em;
+            color: #1e40af;
+            margin: 0;
+        }
+
+        .recent-content {
+            padding: 15px;
+        }
+
+            .recent-content p {
+                margin-top: 0;
+                margin-bottom: 15px;
+            }
+
+        .recent-links {
+            display: flex;
+            gap: 10px;
+        }
+
+            .recent-links a {
+                display: inline-block;
+                padding: 5px 10px;
+                background-color: #dbeafe;
+                color: #1e40af;
+                text-decoration: none;
+                border-radius: 5px;
+                font-size: 0.9em;
+                transition: all 0.2s ease;
+            }
+
+                .recent-links a:hover {
+                    background-color: #bfdbfe;
+                }
+
+        @media (max-width: 767px) {
+            .recent-header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .recent-icon {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -196,7 +298,7 @@
         <div class="timeline">
             <!-- Evento 1 -->
             <div class="event">
-                            <div class="event-marker" id="marker-1"></div>
+                <div class="event-marker" id="marker-1"></div>
                 <div class="event-content" id="event-1">
                     <div class="year">1830</div>
                     <div class="event-title">Inicio del Movimiento Obrero en España</div>
@@ -434,6 +536,95 @@
             </div>
         </div>
 
+        <div class="recent-events">
+            <h2 class="recent-title">5 Hechos Importantes en el Derecho Laboral (2025)</h2>
+
+            <div class="recent-container">
+                <!-- Hecho 1 -->
+                <div class="recent-event">
+                    <div class="recent-header">
+                        <div class="recent-icon">
+                            <i class="recent-icon-inner">€</i>
+                        </div>
+                        <h3 class="recent-event-title">Subida del SMI</h3>
+                    </div>
+                    <div class="recent-content">
+                        <p>El 11 de febrero de 2025, el Consejo de Ministros de España aprobó un incremento del 4,4% en el Salario Mínimo Interprofesional (SMI), elevándolo a 1.184 euros mensuales distribuidos en 14 pagas.</p>
+                        <div class="recent-links">
+                            <a href="https://www.huffingtonpost.es/economia/si-nomina-febrero-cobras-cantidad-12-pagas-te-pagando.html" target="_blank" rel="noopener">Huffpost</a>
+                            <a href="https://www.huffingtonpost.es/economia/si-nomina-febrero-cobras-cantidad-12-pagas-te-pagando.html" target="_blank" rel="noopener">Civio</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hecho 2 -->
+                <div class="recent-event">
+                    <div class="recent-header">
+                        <div class="recent-icon">
+                            <i class="recent-icon-inner">⏰</i>
+                        </div>
+                        <h3 class="recent-event-title">Reducción de horario laboral</h3>
+                    </div>
+                    <div class="recent-content">
+                        <p>En febrero de 2025, el Gobierno de España aprobó un anteproyecto de ley para reducir la jornada laboral máxima de 40 a 37,5 horas semanales sin disminución salarial. Esta medida, respaldada por los sindicatos, busca mejorar la conciliación laboral y personal.</p>
+                        <div class="recent-links">
+                            <a href="https://noticias.juridicas.com/actualidad/noticias/19909-trabajo-saca-adelante-el-borrador-de-ley-para-la-jornada-de-37-5-horas:-podria-surtir-efectos-a-final-de-ano/" target="_blank" rel="noopener">Noticias jurídicas</a>
+                            <a href="https://www.elconfidencial.com/economia/2025-02-04/consejo-ministros-reduccion-jornada-laboral-37-5_4057189/" target="_blank" rel="noopener">El Confidencial</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hecho 3 -->
+                <div class="recent-event">
+                    <div class="recent-header">
+                        <div class="recent-icon">
+                            <i class="recent-icon-inner">⚖️</i>
+                        </div>
+                        <h3 class="recent-event-title">Despido Subjetivo</h3>
+                    </div>
+                    <div class="recent-content">
+                        <p>El "despido subjetivo" es una propuesta de Yolanda Díaz que busca cambiar las indemnizaciones por despido, considerando no sólo la antigüedad del trabajador, sino también su situación personal, como cargas familiares o vulnerabilidad. El objetivo es hacer más justos los despidos, ofreciendo compensaciones más adaptadas a cada caso.</p>
+                        <div class="recent-links">
+                            <a href="https://cincodias.elpais.com/opinion/2025-02-25/la-inagotable-agenda-diaz-ahora-llega-el-despido-subjetivo.html" target="_blank" rel="noopener">Cinco Días</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hecho 4 -->
+                <div class="recent-event">
+                    <div class="recent-header">
+                        <div class="recent-icon">
+                            <i class="recent-icon-inner">📱</i>
+                        </div>
+                        <h3 class="recent-event-title">Derecho a la desconexión digital</h3>
+                    </div>
+                    <div class="recent-content">
+                        <p>Los trabajadores tienen derecho a desconectar fuera del horario laboral para evitar el estrés y la sobrecarga de trabajo. Esto implica que no pueden ser contactados por sus empleadores fuera del horario de trabajo, salvo en casos excepcionales.</p>
+                        <div class="recent-links">
+                            <a href="https://www.apd.es/desconexion-digital-derecho/" target="_blank" rel="noopener">APD</a>
+                            <a href="https://www.uso.es/derecho-a-la-desconexion-digital-resolvemos-todas-tus-dudas/" target="_blank" rel="noopener">USO</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hecho 5 -->
+                <div class="recent-event">
+                    <div class="recent-header">
+                        <div class="recent-icon">
+                            <i class="recent-icon-inner">👨‍💼</i>
+                        </div>
+                        <h3 class="recent-event-title">Aumento de la protección a los trabajadores autónomos</h3>
+                    </div>
+                    <div class="recent-content">
+                        <p>En 2021, se aprobaron nuevas medidas para mejorar la protección social de los autónomos, incluyendo una mayor cobertura en casos de baja por enfermedad o maternidad. La Ley de Autónomos reformó la cotización de estos trabajadores, vinculando sus aportaciones al nivel de ingresos reales.</p>
+                        <div class="recent-links">
+                            <a href="https://cincodias.elpais.com/territorio-pyme/autonomos/2024-05-06/preocupacion-por-la-seguridad-laboral-de-los-trabajadores-autonomos.html" target="_blank" rel="noopener">Cinco Días</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="footer">
             <p>Ismaail Errifaiy - Roberto Mancebo</p>
         </div>
@@ -441,11 +632,11 @@
 
     <script>
         // Añadir interactividad a los eventos
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const eventContents = document.querySelectorAll('.event-content');
 
-            eventContents.forEach(function(eventContent) {
-                eventContent.addEventListener('click', function() {
+            eventContents.forEach(function (eventContent) {
+                eventContent.addEventListener('click', function () {
                     const id = this.id;
                     const number = id.split('-')[1];
                     const marker = document.getElementById('marker-' + number);
@@ -465,6 +656,12 @@
                         image.style.display = 'block';
                     }
                 });
+            });
+            // Abrir enlaces en nueva pestaña
+            const links = document.querySelectorAll('.recent-links a');
+            links.forEach(function (link) {
+                link.setAttribute('target', '_blank');
+                link.setAttribute('rel', 'noopener noreferrer');
             });
         });
     </script>
