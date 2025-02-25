@@ -1,4 +1,4 @@
-﻿</body>
+</body>
 </html>
 <!DOCTYPE html>
 <html lang="es">
@@ -105,16 +105,24 @@
             display: none;
             animation: fadeIn 0.5s ease;
         }
-
         .event-image {
             width: 100%;
-            height: 150px;
-            background-color: #ddd;
-            margin-top: 15px;
-            margin-bottom: 15px;
+            margin: 15px 0;
             display: none;
             animation: fadeIn 0.5s ease;
+            text-align: center;
         }
+
+            .event-image img {
+                max-width: 100%;
+                max-height: 250px; /* Altura máxima más generosa */
+                width: auto;
+                height: auto;
+                object-fit: contain; /* Muestra la imagen completa */
+                padding: 5px; /* Pequeño espacio interior */
+                background-color: #f8f8f8; /* Fondo sutil para unificar apariencia */
+                border-radius: 5px;
+            }
 
         .event-marker {
             position: absolute;
@@ -188,12 +196,14 @@
         <div class="timeline">
             <!-- Evento 1 -->
             <div class="event">
-                <div class="event-marker" id="marker-1"></div>
+                            <div class="event-marker" id="marker-1"></div>
                 <div class="event-content" id="event-1">
                     <div class="year">1830</div>
                     <div class="event-title">Inicio del Movimiento Obrero en España</div>
-                    <div class="event-image"></div>
-                    <div class="event-description">
+
+                    <div class="event-image">
+                        <img src="imagenes/1830.jfif" alt="Descripción de la imagen">
+                    </div>                    <div class="event-description">
                         El movimiento obrero en España se inició en Cataluña en las décadas de 1830 y 1840, aunque fue en el Sexenio Democrático cuando nace realmente con la fundación en el Congreso Obrero de Barcelona de 1870 de la Federación Regional Española de la Primera Internacional.
                     </div>
                 </div>
@@ -205,8 +215,9 @@
                 <div class="event-content" id="event-2">
                     <div class="year">1834</div>
                     <div class="event-title">Primer acuerdo entre industriales y jóvenes obreros</div>
-                    <div class="event-image"></div>
-                    <div class="event-description">
+                    <div class="event-image">
+                        <img src="imagenes/1834.jfif" alt="Descripción de la imagen">
+                    </div>                    <div class="event-description">
                         Legalización de las primeras asociaciones obreras. Es el más lejano precedente del sindicalismo en España acordado el 2 de julio de 1834.
                     </div>
                 </div>
@@ -218,8 +229,9 @@
                 <div class="event-content" id="event-3">
                     <div class="year">1840</div>
                     <div class="event-title">Sociedad Mutua de Tejedores de Barcelona</div>
-                    <div class="event-image"></div>
-                    <div class="event-description">
+                    <div class="event-image">
+                        <img src="imagenes/1840.jpg" alt="Descripción de la imagen">
+                    </div>                    <div class="event-description">
                         El 17 de marzo de 1840, el tejedor Juan Munts inspiró la fundación de la Asociación mutua de obreros de la industria algodonera. Esta asociación representó uno de los primeros intentos de organización obrera formal.
                     </div>
                 </div>
@@ -231,8 +243,9 @@
                 <div class="event-content" id="event-4">
                     <div class="year">1855</div>
                     <div class="event-title">Primera huelga general en España</div>
-                    <div class="event-image"></div>
-                    <div class="event-description">
+                    <div class="event-image">
+                        <img src="imagenes/1855.jfif" alt="Descripción de la imagen">
+                    </div>                    <div class="event-description">
                         La huelga general en España de 1855 se considera la primera huelga general convocada en la historia de España, bajo el lema '¡Asociación o Muerte!'. Tuvo lugar principalmente en Cataluña, durante el reinado de Isabel II, con el gobierno de Baldomero Espartero en el Bienio Progresista.
                     </div>
                 </div>
@@ -244,8 +257,9 @@
                 <div class="event-content" id="event-5">
                     <div class="year">1870</div>
                     <div class="event-title">Fundación de la Federación Regional Española de la Primera Internacional</div>
-                    <div class="event-image"></div>
-                    <div class="event-description">
+                    <div class="event-image">
+                        <img src="imagenes/1870.jfif" alt="Descripción de la imagen">
+                    </div>                    <div class="event-description">
                         Durante el Congreso Obrero de Barcelona se fundó la Federación Regional Española de la Primera Internacional, marcando el nacimiento formal del movimiento obrero organizado en España.
                     </div>
                 </div>
@@ -257,8 +271,9 @@
                 <div class="event-content" id="event-6">
                     <div class="year">1879</div>
                     <div class="event-title">Fundación del PSOE en Madrid</div>
-                    <div class="event-image"></div>
-                    <div class="event-description">
+                    <div class="event-image">
+                        <img src="imagenes/1879.jfif" alt="Descripción de la imagen">
+                    </div>                    <div class="event-description">
                         Fundado clandestinamente en Madrid, el 2 de mayo de 1879, por un grupo de intelectuales encabezados por Pablo Iglesias Posse. El PSOE fue fundado como forma de expresar los afanes e intereses de los trabajadores nacidos de la revolución industrial.
                     </div>
                 </div>
@@ -270,8 +285,9 @@
                 <div class="event-content" id="event-7">
                     <div class="year">1888</div>
                     <div class="event-title">Fundación de la UGT</div>
-                    <div class="event-image"></div>
-                    <div class="event-description">
+                    <div class="event-image">
+                        <img src="imagenes/1888.jpg" alt="Descripción de la imagen">
+                    </div>                    <div class="event-description">
                         La UGT (Unión General de Trabajadores) fue fundada por un grupo de treinta y dos delegados, representantes de cuarenta y cuatro sociedades de oficios, el 12 de agosto de 1888 en Barcelona. Defendía la fijación de salarios mínimos y la jornada de ocho horas, con una vocación internacionalista desde sus inicios.
                     </div>
                 </div>
@@ -283,8 +299,9 @@
                 <div class="event-content" id="event-8">
                     <div class="year">1900</div>
                     <div class="event-title">Ley de accidente de trabajo ('Ley Dato')</div>
-                    <div class="event-image"></div>
-                    <div class="event-description">
+                    <div class="event-image">
+                        <img src="imagenes/1900.jfif" alt="Descripción de la imagen">
+                    </div>                    <div class="event-description">
                         Primera disposición en España que regulaba el accidente de trabajo, creando el Seguro obligatorio. También se aprobó la Ley de condiciones de trabajo de las mujeres y niños, que prohibía el trabajo a menores de 10 años.
                     </div>
                 </div>
@@ -296,8 +313,9 @@
                 <div class="event-content" id="event-9">
                     <div class="year">1910</div>
                     <div class="event-title">Creación de la CNT en Barcelona</div>
-                    <div class="event-image"></div>
-                    <div class="event-description">
+                    <div class="event-image">
+                        <img src="imagenes/1910.jfif" alt="Descripción de la imagen">
+                    </div>                    <div class="event-description">
                         La Confederación Nacional del Trabajo (CNT) fue creada como fruto del sindicalismo obrero por encontrar una coordinación necesaria para la clase obrera en su lucha contra el capitalismo, basada en las tesis anarquistas.
                     </div>
                 </div>
@@ -309,8 +327,9 @@
                 <div class="event-content" id="event-10">
                     <div class="year">1919</div>
                     <div class="event-title">Jornada laboral de 8 horas</div>
-                    <div class="event-image"></div>
-                    <div class="event-description">
+                    <div class="event-image">
+                        <img src="imagenes/1919.jpeg" alt="Descripción de la imagen">
+                    </div>                    <div class="event-description">
                         El 3 de abril de 1919, tras una intensa huelga de 44 días, el gobierno español firmó un decreto que fijaba la jornada laboral máxima de ocho horas diarias. España se convirtió en el primer país del continente europeo en adoptar esta medida por ley.
                     </div>
                 </div>
@@ -322,8 +341,9 @@
                 <div class="event-content" id="event-11">
                     <div class="year">1920</div>
                     <div class="event-title">Creación del Ministerio del Trabajo</div>
-                    <div class="event-image"></div>
-                    <div class="event-description">
+                    <div class="event-image">
+                        <img src="imagenes/1920.jpg" alt="Descripción de la imagen">
+                    </div>                    <div class="event-description">
                         El Ministerio de Trabajo agrupó bajo su dirección a todos los organismos con competencias sociales creados en años anteriores, pero con un rango administrativo de mayor capacidad, para afrontar la difícil situación laboral del momento.
                     </div>
                 </div>
@@ -335,8 +355,9 @@
                 <div class="event-content" id="event-12">
                     <div class="year">1931</div>
                     <div class="event-title">Constitucionalización del derecho del trabajo (Segunda República)</div>
-                    <div class="event-image"></div>
-                    <div class="event-description">
+                    <div class="event-image">
+                        <img src="imagenes/1931.webp" alt="Descripción de la imagen">
+                    </div>                    <div class="event-description">
                         La Constitución de 1931, calificada de 'liberal, demócrata con apertura a los derechos sociales', comenzaba definiendo a España como 'una república democrática de trabajadores de toda clase', afirmando el carácter de 'obligación social' del trabajo.
                     </div>
                 </div>
@@ -348,8 +369,9 @@
                 <div class="event-content" id="event-13">
                     <div class="year">1938</div>
                     <div class="event-title">Fuero del trabajo (Franquismo)</div>
-                    <div class="event-image"></div>
-                    <div class="event-description">
+                    <div class="event-image">
+                        <img src="imagenes/1938.jfif" alt="Descripción de la imagen">
+                    </div>                    <div class="event-description">
                         Una de las ocho Leyes Fundamentales del franquismo, elaborada antes del fin de la Guerra Civil. Regulaba la jornada laboral y el descanso, y creó la Magistratura del Trabajo y los sindicatos verticales que agrupaban por igual a patronos y obreros.
                     </div>
                 </div>
@@ -361,8 +383,9 @@
                 <div class="event-content" id="event-14">
                     <div class="year">1958</div>
                     <div class="event-title">Ley de Convenios Colectivos</div>
-                    <div class="event-image"></div>
-                    <div class="event-description">
+                    <div class="event-image">
+                        <img src="imagenes/1958.jfif" alt="Descripción de la imagen">
+                    </div>                    <div class="event-description">
                         Nuevo mecanismo de negociación mediante el cual empresarios y trabajadores llegaban a acuerdos sobre condiciones de trabajo. Fomentaba la justicia social, mejora del nivel de vida y elevación de la productividad.
                     </div>
                 </div>
@@ -374,8 +397,9 @@
                 <div class="event-content" id="event-15">
                     <div class="year">1978</div>
                     <div class="event-title">Constitución Española</div>
-                    <div class="event-image"></div>
-                    <div class="event-description">
+                    <div class="event-image">
+                        <img src="imagenes/1978.jfif" alt="Descripción de la imagen">
+                    </div>                    <div class="event-description">
                         El artículo 35.1 establece el derecho al trabajo, a la libre elección de profesión, a la promoción laboral y a una remuneración suficiente, sin discriminación por sexo. La Constitución recoge ampliamente contenidos relacionados con derechos laborales.
                     </div>
                 </div>
@@ -387,8 +411,9 @@
                 <div class="event-content" id="event-16">
                     <div class="year">1980</div>
                     <div class="event-title">Estatuto de los Trabajadores</div>
-                    <div class="event-image"></div>
-                    <div class="event-description">
+                    <div class="event-image">
+                        <img src="imagenes/1980.jpg" alt="Descripción de la imagen">
+                    </div>                    <div class="event-description">
                         Aprobado el 10 de marzo de 1980, representó una adaptación del derecho laboral a la nueva situación democrática del país. Estableció una nueva regulación de la relación laboral entre empleadores y empleados.
                     </div>
                 </div>
@@ -400,8 +425,9 @@
                 <div class="event-content" id="event-17">
                     <div class="year">1985</div>
                     <div class="event-title">Ley de libertad sindical</div>
-                    <div class="event-image"></div>
-                    <div class="event-description">
+                    <div class="event-image">
+                        <img src="imagenes/1985.jfif" alt="Descripción de la imagen">
+                    </div>                    <div class="event-description">
                         La Ley 11/1985 de 2 de agosto establece que todos los trabajadores tienen derecho a sindicarse libremente para la promoción y defensa de sus intereses económicos y sociales, representando un avance significativo tras la dictadura.
                     </div>
                 </div>
